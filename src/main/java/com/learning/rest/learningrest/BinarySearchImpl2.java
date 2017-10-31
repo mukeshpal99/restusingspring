@@ -4,16 +4,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class BinarySearchImpl {
+public class BinarySearchImpl2 {
 
 	@Autowired()
 	SortAlgo sortAlgo;
-	
-	//Constructor Injection
-	public BinarySearchImpl(SortAlgo tempSortAlgo) {
-		this.sortAlgo = tempSortAlgo;
+
+	// setter injection
+	public void setSortAlgo(SortAlgo sortAlgo) {
+		this.sortAlgo = sortAlgo;
 	}
-	
+
 	public int search(int[] intArray, int numberToSearch)
 	{
 		// implement the sorting logic
