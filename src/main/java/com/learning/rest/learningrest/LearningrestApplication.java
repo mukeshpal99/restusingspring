@@ -13,7 +13,7 @@ public static void main(String[] args) {
 		
 		
 		ApplicationContext context= SpringApplication.run(LearningrestApplication.class, args);
-		BinarySearchImpl2 binSrch = context.getBean(BinarySearchImpl2.class);
+		BinarySearchImpl3 binSrch = context.getBean(BinarySearchImpl3.class);
 		
 		int[] inputArray = {3,4,7,5,6};
 		int result = binSrch.search(inputArray, 4);
